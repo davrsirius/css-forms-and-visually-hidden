@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Input elements and javascript</title>
+  <!-- styles -->
+  <link rel="stylesheet" href="CSS/normalize.css">
+  <link rel="stylesheet" href="CSS/styles.css">
+</head>
+
+<body>
+    <main class="main-content">
+      <div class="container">
+        <form action="https://echo.htmlacademy.ru">
+          <select class="select" name="select">
+            <option>O'zbekiston</option>
+            <option>AQSH</option>
+            <option>Kanada</option>
+            <option>Boshqa</option>
+          </select>
+          <input class="input" type="text" name="Text" placeholder="Davlatni kiriting"  required disabled>
+          <!-- <input class="input" type="email" name="email" placeholder="Email" pattern="^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$" required disabled> -->
+        </form>
+
+        <div>
+          <input id="somesome" type="checkbox">
+          <span>Text</span>
+          <span>Another Text</span>
+        </div>
+
+<br><br><br>
+        <form class="interactive" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset>
+            <legend>Qaysi sport turiga qiziqasiz?</legend>
+            <div class="form-inner">
+              <label class="checkbox-label">
+                <input class="visually-hidden checkbox checkbox-ping-pong" type="checkbox" name="ping-pong">
+                <span class="checkbox-control"></span>
+                <span class="checkbox-text">Stol tennisi</span>
+              </label>
+
+              <label class="checkbox-label">
+                <input class="visually-hidden checkbox checkbox-soccer" type="checkbox" name="soccer">
+                <span class="checkbox-control"></span>
+                <span class="checkbox-text">Futbol</span>
+              </label>
+
+              <label class="checkbox-label">
+                <input class="visually-hidden checkbox checkbox-basketball" type="checkbox" name="basketball">
+                <span class="checkbox-control"></span>
+                <span class="checkbox-text">Basketbol</span>
+              </label>
+
+              <label class="checkbox-label">
+                <input class="visually-hidden checkbox checkbox-hockey" type="checkbox" name="ice-hockey" disabled>
+                <span class="checkbox-control"></span>
+                <span class="checkbox-text">Hokkey</span>
+              </label>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </main>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
